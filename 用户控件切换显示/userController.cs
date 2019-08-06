@@ -8,3 +8,8 @@
 
 
         }
+
+Panel wincontent = (Panel)Program.m_mainform.Controls["WinContent"];
+SplitContainer sc = (SplitContainer)wincontent.Controls[0].Controls["splitContainer1"];
+TabControl tc = (TabControl)sc.Panel1.Controls["tabControl1"];
+tc.SelectedIndex = 1;
